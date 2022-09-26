@@ -10,13 +10,12 @@ class Student:
         self.skills = skills
 
     def say_name(self):
-        print("Hola mi nombre es", self.name, "me desempeño como", self.position, "y mis habilidades son", self.skills, show_skills())   
-
+        print("Hola mi nombre es", self.name, "me desempeño como", self.position, "y mis habilidades son", self.show_skills())   
     def show_skills(self):
-        skills
+        skills = ""
         for skill in self.skills:
-            print(skill)
-        rtu
+            skills += skill + ", "
+        return skills    
 
 Alice = Student("Alice", "Fullstack Developer", ["Python", "Git", "HTML","CSS","Javascript"])  
 Bob= Student("Bob", "Chef", ["comida peruana", "comida mexicana", "comida asiática","comida árabe"])
